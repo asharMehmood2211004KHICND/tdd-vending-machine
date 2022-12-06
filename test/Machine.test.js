@@ -13,4 +13,19 @@ describe('the vending machine', () => {
         expect(expected).toEqual(actual);
     });
 
+
+    it('I want to know how much money I have deposited, so that I know what I can purchase', () => {
+        // setup
+        const machine = new Machine();
+        const expected = 'You have deposited Rs 100';
+
+        // exercise
+        const actual = machine.deposit();
+
+        // assert
+        expect(expected).toEqual(actual);
+    });
+
+
+
 });

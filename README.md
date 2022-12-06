@@ -1,5 +1,5 @@
 ## TDD Vending Machine
-
+### Authors : Ashar Mehmood and Syed Hassan Haider Zaidi
 ### Objectives:
 
 - Give and receive feedback on pairing behaviors - see Pairing Rubric below

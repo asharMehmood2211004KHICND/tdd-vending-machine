@@ -40,6 +40,15 @@ module.exports = class Machine {
         
     }
 
+    selectItem(code){
+        let item_code = ['7up','big apple','chips'];
+        if(item_code.includes(code)){
+            return "thanks"
+        }else{
+            return 'The item you selected is unavailable';
+        }
+    }
+
 };
 
 

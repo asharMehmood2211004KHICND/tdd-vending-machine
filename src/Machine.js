@@ -6,6 +6,7 @@ module.exports = class Machine {
 
 
 
+
     seeSelections() {
         let items = [{'crisps': 'Rs 100'}, {'chocolate': 'Rs 350'}, {'mints': 'Rs 70'}];
         return items;
@@ -13,7 +14,7 @@ module.exports = class Machine {
     }
 
     deposit(amount_entered){
-        
+        this.last_amount_entered = amount_entered
         let arr = [10,20,50,100,500];
 
         // for(let i=0;i<=arr.length;i++){
@@ -33,6 +34,11 @@ module.exports = class Machine {
         }
     }
     
+    addMoney(added_money){
+     let  total_money = this.last_amount_entered+=added_money;
+       return total_money;
+        
+    }
 
 };
 
